@@ -15,4 +15,6 @@
 @property (copy, nonatomic, readonly) NSString *logoUrl;
 @property (copy, nonatomic, readonly) NSString *websiteUrl;
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 @end

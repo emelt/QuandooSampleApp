@@ -23,13 +23,13 @@
 		0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */; };
 		0F0128321AFE75580079C245 /* ETNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282B1AFE75580079C245 /* ETNetworkingManager.m */; };
 		0F0128331AFE75580079C245 /* ETMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282E1AFE75580079C245 /* ETMatch.m */; };
-		0F0128451AFE95900079C245 /* ETTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128441AFE95900079C245 /* ETTeam.m */; };
-		0F0128481AFE979E0079C245 /* ETTeamNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */; };
 		0F01283E1AFE76890079C245 /* ETMatchDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128361AFE76890079C245 /* ETMatchDetailCell.m */; };
 		0F01283F1AFE76890079C245 /* ETMatchDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */; };
 		0F0128401AFE76890079C245 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0128381AFE76890079C245 /* Images.xcassets */; };
 		0F0128411AFE76890079C245 /* ETMatchDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01283B1AFE76890079C245 /* ETMatchDetailsViewController.m */; };
 		0F0128421AFE76890079C245 /* ETMatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01283D1AFE76890079C245 /* ETMatchListViewController.m */; };
+		0F0128451AFE95900079C245 /* ETTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128441AFE95900079C245 /* ETTeam.m */; };
+		0F0128481AFE979E0079C245 /* ETTeamNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */; };
 		0F1F92CB1AFE3E2E00C44B49 /* ETSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */; };
 /* End PBXBuildFile section */
 
@@ -80,10 +80,6 @@
 		0F01282B1AFE75580079C245 /* ETNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkingManager.m; sourceTree = "<group>"; };
 		0F01282D1AFE75580079C245 /* ETMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatch.h; sourceTree = "<group>"; };
 		0F01282E1AFE75580079C245 /* ETMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatch.m; sourceTree = "<group>"; };
-		0F0128431AFE95900079C245 /* ETTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTeam.h; sourceTree = "<group>"; };
-		0F0128441AFE95900079C245 /* ETTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTeam.m; sourceTree = "<group>"; };
-		0F0128461AFE979E0079C245 /* ETTeamNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTeamNetworkingManager.h; sourceTree = "<group>"; };
-		0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTeamNetworkingManager.m; sourceTree = "<group>"; };
 		0F0128351AFE76890079C245 /* ETMatchDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchDetailCell.h; sourceTree = "<group>"; };
 		0F0128361AFE76890079C245 /* ETMatchDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchDetailCell.m; sourceTree = "<group>"; };
 		0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETMatchDetailCell.xib; sourceTree = "<group>"; };
@@ -92,10 +88,15 @@
 		0F01283B1AFE76890079C245 /* ETMatchDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchDetailsViewController.m; sourceTree = "<group>"; };
 		0F01283C1AFE76890079C245 /* ETMatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchListViewController.h; sourceTree = "<group>"; };
 		0F01283D1AFE76890079C245 /* ETMatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchListViewController.m; sourceTree = "<group>"; };
+		0F0128431AFE95900079C245 /* ETTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTeam.h; sourceTree = "<group>"; };
+		0F0128441AFE95900079C245 /* ETTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTeam.m; sourceTree = "<group>"; };
+		0F0128461AFE979E0079C245 /* ETTeamNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTeamNetworkingManager.h; sourceTree = "<group>"; };
+		0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTeamNetworkingManager.m; sourceTree = "<group>"; };
 		0F1F92AB1AFE3E2D00C44B49 /* ETSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F92C41AFE3E2E00C44B49 /* ETSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F92C91AFE3E2E00C44B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSampleAppTests.m; sourceTree = "<group>"; };
+		0F95D05A1AFF9D6B0078B55A /* ETNetworkingCommons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkingCommons.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +192,7 @@
 		0F0128271AFE75580079C245 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0F95D05A1AFF9D6B0078B55A /* ETNetworkingCommons.h */,
 				0F0128281AFE75580079C245 /* ETMatchNetworkingManager.h */,
 				0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */,
 				0F01282A1AFE75580079C245 /* ETNetworkingManager.h */,

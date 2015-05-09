@@ -14,6 +14,8 @@ typedef void(^ETTeamDetailRequestCompletion)(NSError *error, ETTeam *team);
 
 @interface ETTeamNetworkingManager : ETNetworkingManager
 
++ (instancetype)sharedInstance;
+
 - (void)getTeamDetailsForTeamWithId:(NSString *)matchId completion:(ETTeamDetailRequestCompletion)completion;
 
 @end
