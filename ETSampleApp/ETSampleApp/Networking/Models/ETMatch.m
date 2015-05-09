@@ -7,6 +7,7 @@
 //
 
 #import "NSDictionary+ETAdditions.h"
+#import "ETNetworkingCommons.h"
 #import "ETDateFormatter.h"
 #import "ETMatch.h"
 
@@ -34,7 +35,7 @@ static NSString * const kAwayIdKey = @"awayTeamId";
         _homeTeamPenalties = [dictionary integerForKey:kHomePenaltiesKey];
         _awayTeamPenalties = [dictionary integerForKey:kAwayPenaltiesKey];
         NSString *dateString = [dictionary objectForKey:kStartTimeKey];
-        _startDate = [[ETDateFormatter sharedFormatter] dateFromStringFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" fromString:dateString] ;
+        _startDate = [[ETDateFormatter sharedFormatter] dateFromStringFormat:kETUTCDateFormat fromString:dateString] ;
         _venue = [dictionary stringForKey:kVenueKey];
         _group = [dictionary stringForKey:kGroupKey];
         _matchId = [dictionary stringForKey:kMatchIdKey];

@@ -11,14 +11,11 @@
 @class ETMatch;
 
 typedef void(^ETMatchListRequestCompletion)(NSError *error, NSArray *matches);
-typedef void(^ETMatchDetailRequestCompletion)(NSError *error, ETMatch *match);
 
 @interface ETMatchNetworkingManager : ETNetworkingManager
 
 + (instancetype)sharedInstance;
 
 - (void)getMatchesStartingFromIndex:(NSInteger)startIndex completion:(ETMatchListRequestCompletion)completion;
-
-- (void)getMatchDetailsForMatchWithId:(NSString *)matchId completion:(ETMatchDetailRequestCompletion)completion;
 
 @end

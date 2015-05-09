@@ -23,6 +23,8 @@
 		0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */; };
 		0F0128321AFE75580079C245 /* ETNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282B1AFE75580079C245 /* ETNetworkingManager.m */; };
 		0F0128331AFE75580079C245 /* ETMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282E1AFE75580079C245 /* ETMatch.m */; };
+		0F0128451AFE95900079C245 /* ETTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128441AFE95900079C245 /* ETTeam.m */; };
+		0F0128481AFE979E0079C245 /* ETTeamNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */; };
 		0F01283E1AFE76890079C245 /* ETMatchDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128361AFE76890079C245 /* ETMatchDetailCell.m */; };
 		0F01283F1AFE76890079C245 /* ETMatchDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */; };
 		0F0128401AFE76890079C245 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0128381AFE76890079C245 /* Images.xcassets */; };
@@ -78,6 +80,10 @@
 		0F01282B1AFE75580079C245 /* ETNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkingManager.m; sourceTree = "<group>"; };
 		0F01282D1AFE75580079C245 /* ETMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatch.h; sourceTree = "<group>"; };
 		0F01282E1AFE75580079C245 /* ETMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatch.m; sourceTree = "<group>"; };
+		0F0128431AFE95900079C245 /* ETTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTeam.h; sourceTree = "<group>"; };
+		0F0128441AFE95900079C245 /* ETTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTeam.m; sourceTree = "<group>"; };
+		0F0128461AFE979E0079C245 /* ETTeamNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTeamNetworkingManager.h; sourceTree = "<group>"; };
+		0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTeamNetworkingManager.m; sourceTree = "<group>"; };
 		0F0128351AFE76890079C245 /* ETMatchDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchDetailCell.h; sourceTree = "<group>"; };
 		0F0128361AFE76890079C245 /* ETMatchDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchDetailCell.m; sourceTree = "<group>"; };
 		0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETMatchDetailCell.xib; sourceTree = "<group>"; };
@@ -190,6 +196,8 @@
 				0F01282A1AFE75580079C245 /* ETNetworkingManager.h */,
 				0F01282B1AFE75580079C245 /* ETNetworkingManager.m */,
 				0F01282C1AFE75580079C245 /* Models */,
+				0F0128461AFE979E0079C245 /* ETTeamNetworkingManager.h */,
+				0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -199,6 +207,8 @@
 			children = (
 				0F01282D1AFE75580079C245 /* ETMatch.h */,
 				0F01282E1AFE75580079C245 /* ETMatch.m */,
+				0F0128431AFE95900079C245 /* ETTeam.h */,
+				0F0128441AFE95900079C245 /* ETTeam.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,6 +388,7 @@
 				0F0128191AFE741F0079C245 /* AFURLSessionManager.m in Sources */,
 				0F0128131AFE741F0079C245 /* AFHTTPSessionManager.m in Sources */,
 				0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */,
+				0F0128481AFE979E0079C245 /* ETTeamNetworkingManager.m in Sources */,
 				0F0128421AFE76890079C245 /* ETMatchListViewController.m in Sources */,
 				0F0128301AFE75580079C245 /* ETDateFormatter.m in Sources */,
 				0F0128151AFE741F0079C245 /* AFSecurityPolicy.m in Sources */,
@@ -390,6 +401,7 @@
 				0F0128161AFE741F0079C245 /* AFURLConnectionOperation.m in Sources */,
 				0F0128331AFE75580079C245 /* ETMatch.m in Sources */,
 				0F0128171AFE741F0079C245 /* AFURLRequestSerialization.m in Sources */,
+				0F0128451AFE95900079C245 /* ETTeam.m in Sources */,
 				0F0128181AFE741F0079C245 /* AFURLResponseSerialization.m in Sources */,
 				0F01281B1AFE741F0079C245 /* main.m in Sources */,
 				0F0128111AFE741F0079C245 /* AFHTTPRequestOperation.m in Sources */,
