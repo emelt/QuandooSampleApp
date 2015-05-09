@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="143" id="0zr-cf-cMM" customClass="ETMatchDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0zr-cf-cMM" id="pLo-iO-ejU">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URm-yL-Z6I">
+                        <rect key="frame" x="168" y="52" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voO-mx-bwv">
+                        <rect key="frame" x="168" y="85" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZx-Ez-alv">
+                        <rect key="frame" x="168" y="20" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMM-NA-OHK">
+                        <rect key="frame" x="168" y="117" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PZx-Ez-alv" firstAttribute="top" secondItem="pLo-iO-ejU" secondAttribute="top" constant="20" id="25S-6Y-CWN"/>
+                    <constraint firstAttribute="centerX" secondItem="PZx-Ez-alv" secondAttribute="centerX" id="Nra-uw-df0"/>
+                    <constraint firstItem="URm-yL-Z6I" firstAttribute="top" secondItem="PZx-Ez-alv" secondAttribute="bottom" constant="12" id="PdC-jN-Zli"/>
+                    <constraint firstAttribute="centerX" secondItem="URm-yL-Z6I" secondAttribute="centerX" id="Psm-DX-r9M"/>
+                    <constraint firstItem="voO-mx-bwv" firstAttribute="top" secondItem="URm-yL-Z6I" secondAttribute="bottom" constant="12" id="THG-tH-g9w"/>
+                    <constraint firstAttribute="centerX" secondItem="qMM-NA-OHK" secondAttribute="centerX" id="fWm-E2-JGe"/>
+                    <constraint firstItem="qMM-NA-OHK" firstAttribute="top" secondItem="voO-mx-bwv" secondAttribute="bottom" constant="12" id="pj6-Nd-OWb"/>
+                    <constraint firstAttribute="centerX" secondItem="voO-mx-bwv" secondAttribute="centerX" id="yzD-HR-req"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="groupLabel" destination="qMM-NA-OHK" id="KDA-nI-i3l"/>
+                <outlet property="scoreLabel" destination="PZx-Ez-alv" id="BuT-iK-bPc"/>
+                <outlet property="startDateLabel" destination="URm-yL-Z6I" id="rJC-0v-WJ5"/>
+                <outlet property="venueLabel" destination="voO-mx-bwv" id="par-h2-M6C"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="322.5"/>
+        </tableViewCell>
+    </objects>
+</document>

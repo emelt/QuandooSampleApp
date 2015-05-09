@@ -23,6 +23,11 @@
 		0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */; };
 		0F0128321AFE75580079C245 /* ETNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282B1AFE75580079C245 /* ETNetworkingManager.m */; };
 		0F0128331AFE75580079C245 /* ETMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282E1AFE75580079C245 /* ETMatch.m */; };
+		0F01283E1AFE76890079C245 /* ETMatchDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128361AFE76890079C245 /* ETMatchDetailCell.m */; };
+		0F01283F1AFE76890079C245 /* ETMatchDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */; };
+		0F0128401AFE76890079C245 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0128381AFE76890079C245 /* Images.xcassets */; };
+		0F0128411AFE76890079C245 /* ETMatchDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01283B1AFE76890079C245 /* ETMatchDetailsViewController.m */; };
+		0F0128421AFE76890079C245 /* ETMatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01283D1AFE76890079C245 /* ETMatchListViewController.m */; };
 		0F1F92CB1AFE3E2E00C44B49 /* ETSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +78,14 @@
 		0F01282B1AFE75580079C245 /* ETNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkingManager.m; sourceTree = "<group>"; };
 		0F01282D1AFE75580079C245 /* ETMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatch.h; sourceTree = "<group>"; };
 		0F01282E1AFE75580079C245 /* ETMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatch.m; sourceTree = "<group>"; };
+		0F0128351AFE76890079C245 /* ETMatchDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchDetailCell.h; sourceTree = "<group>"; };
+		0F0128361AFE76890079C245 /* ETMatchDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchDetailCell.m; sourceTree = "<group>"; };
+		0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETMatchDetailCell.xib; sourceTree = "<group>"; };
+		0F0128381AFE76890079C245 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0F01283A1AFE76890079C245 /* ETMatchDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchDetailsViewController.h; sourceTree = "<group>"; };
+		0F01283B1AFE76890079C245 /* ETMatchDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchDetailsViewController.m; sourceTree = "<group>"; };
+		0F01283C1AFE76890079C245 /* ETMatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchListViewController.h; sourceTree = "<group>"; };
+		0F01283D1AFE76890079C245 /* ETMatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchListViewController.m; sourceTree = "<group>"; };
 		0F1F92AB1AFE3E2D00C44B49 /* ETSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F92C41AFE3E2E00C44B49 /* ETSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F92C91AFE3E2E00C44B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,6 +203,27 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0F0128341AFE76890079C245 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0F0128351AFE76890079C245 /* ETMatchDetailCell.h */,
+				0F0128361AFE76890079C245 /* ETMatchDetailCell.m */,
+				0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0F0128391AFE76890079C245 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F01283A1AFE76890079C245 /* ETMatchDetailsViewController.h */,
+				0F01283B1AFE76890079C245 /* ETMatchDetailsViewController.m */,
+				0F01283C1AFE76890079C245 /* ETMatchListViewController.h */,
+				0F01283D1AFE76890079C245 /* ETMatchListViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		0F1F92A21AFE3E2D00C44B49 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +245,9 @@
 		0F1F92AD1AFE3E2D00C44B49 /* ETSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0F0128341AFE76890079C245 /* Cells */,
+				0F0128381AFE76890079C245 /* Images.xcassets */,
+				0F0128391AFE76890079C245 /* View Controllers */,
 				0F0128201AFE75580079C245 /* Extensions */,
 				0F0128241AFE75580079C245 /* Helpers */,
 				0F0128271AFE75580079C245 /* Networking */,
@@ -319,6 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0128401AFE76890079C245 /* Images.xcassets in Resources */,
+				0F01283F1AFE76890079C245 /* ETMatchDetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +378,11 @@
 				0F0128191AFE741F0079C245 /* AFURLSessionManager.m in Sources */,
 				0F0128131AFE741F0079C245 /* AFHTTPSessionManager.m in Sources */,
 				0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */,
+				0F0128421AFE76890079C245 /* ETMatchListViewController.m in Sources */,
 				0F0128301AFE75580079C245 /* ETDateFormatter.m in Sources */,
 				0F0128151AFE741F0079C245 /* AFSecurityPolicy.m in Sources */,
+				0F01283E1AFE76890079C245 /* ETMatchDetailCell.m in Sources */,
+				0F0128411AFE76890079C245 /* ETMatchDetailsViewController.m in Sources */,
 				0F0128121AFE741F0079C245 /* AFHTTPRequestOperationManager.m in Sources */,
 				0F01281A1AFE741F0079C245 /* AppDelegate.m in Sources */,
 				0F0128321AFE75580079C245 /* ETNetworkingManager.m in Sources */,
