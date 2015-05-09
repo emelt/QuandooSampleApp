@@ -18,9 +18,11 @@
 		0F0128191AFE741F0079C245 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128071AFE741F0079C245 /* AFURLSessionManager.m */; };
 		0F01281A1AFE741F0079C245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01280A1AFE741F0079C245 /* AppDelegate.m */; };
 		0F01281B1AFE741F0079C245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01280B1AFE741F0079C245 /* main.m */; };
-		0F01281C1AFE741F0079C245 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F01280D1AFE741F0079C245 /* LaunchScreen.xib */; };
-		0F01281D1AFE741F0079C245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F01280F1AFE741F0079C245 /* Main.storyboard */; };
-		0F01281F1AFE745C0079C245 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F01281E1AFE745C0079C245 /* Info.plist */; };
+		0F01282F1AFE75580079C245 /* NSDictionary+ETAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128231AFE75580079C245 /* NSDictionary+ETAdditions.m */; };
+		0F0128301AFE75580079C245 /* ETDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128261AFE75580079C245 /* ETDateFormatter.m */; };
+		0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */; };
+		0F0128321AFE75580079C245 /* ETNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282B1AFE75580079C245 /* ETNetworkingManager.m */; };
+		0F0128331AFE75580079C245 /* ETMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01282E1AFE75580079C245 /* ETMatch.m */; };
 		0F1F92CB1AFE3E2E00C44B49 /* ETSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,17 @@
 		0F01280E1AFE741F0079C245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		0F0128101AFE741F0079C245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		0F01281E1AFE745C0079C245 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0128211AFE75580079C245 /* ETNetworkingManager_ETProtected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkingManager_ETProtected.h; sourceTree = "<group>"; };
+		0F0128221AFE75580079C245 /* NSDictionary+ETAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ETAdditions.h"; sourceTree = "<group>"; };
+		0F0128231AFE75580079C245 /* NSDictionary+ETAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ETAdditions.m"; sourceTree = "<group>"; };
+		0F0128251AFE75580079C245 /* ETDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDateFormatter.h; sourceTree = "<group>"; };
+		0F0128261AFE75580079C245 /* ETDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDateFormatter.m; sourceTree = "<group>"; };
+		0F0128281AFE75580079C245 /* ETMatchNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatchNetworkingManager.h; sourceTree = "<group>"; };
+		0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatchNetworkingManager.m; sourceTree = "<group>"; };
+		0F01282A1AFE75580079C245 /* ETNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkingManager.h; sourceTree = "<group>"; };
+		0F01282B1AFE75580079C245 /* ETNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNetworkingManager.m; sourceTree = "<group>"; };
+		0F01282D1AFE75580079C245 /* ETMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMatch.h; sourceTree = "<group>"; };
+		0F01282E1AFE75580079C245 /* ETMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMatch.m; sourceTree = "<group>"; };
 		0F1F92AB1AFE3E2D00C44B49 /* ETSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F92C41AFE3E2E00C44B49 /* ETSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F92C91AFE3E2E00C44B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +150,46 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		0F0128201AFE75580079C245 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F0128211AFE75580079C245 /* ETNetworkingManager_ETProtected.h */,
+				0F0128221AFE75580079C245 /* NSDictionary+ETAdditions.h */,
+				0F0128231AFE75580079C245 /* NSDictionary+ETAdditions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F0128241AFE75580079C245 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F0128251AFE75580079C245 /* ETDateFormatter.h */,
+				0F0128261AFE75580079C245 /* ETDateFormatter.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0F0128271AFE75580079C245 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0F0128281AFE75580079C245 /* ETMatchNetworkingManager.h */,
+				0F0128291AFE75580079C245 /* ETMatchNetworkingManager.m */,
+				0F01282A1AFE75580079C245 /* ETNetworkingManager.h */,
+				0F01282B1AFE75580079C245 /* ETNetworkingManager.m */,
+				0F01282C1AFE75580079C245 /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0F01282C1AFE75580079C245 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F01282D1AFE75580079C245 /* ETMatch.h */,
+				0F01282E1AFE75580079C245 /* ETMatch.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0F1F92A21AFE3E2D00C44B49 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +211,9 @@
 		0F1F92AD1AFE3E2D00C44B49 /* ETSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				0F0128201AFE75580079C245 /* Extensions */,
+				0F0128241AFE75580079C245 /* Helpers */,
+				0F0128271AFE75580079C245 /* Networking */,
 				0F01281E1AFE745C0079C245 /* Info.plist */,
 				0F0127F31AFE741F0079C245 /* 3rd Party */,
 				0F0128081AFE741F0079C245 /* Base */,
@@ -263,9 +319,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F01281C1AFE741F0079C245 /* LaunchScreen.xib in Resources */,
-				0F01281D1AFE741F0079C245 /* Main.storyboard in Resources */,
-				0F01281F1AFE745C0079C245 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +338,20 @@
 			files = (
 				0F0128191AFE741F0079C245 /* AFURLSessionManager.m in Sources */,
 				0F0128131AFE741F0079C245 /* AFHTTPSessionManager.m in Sources */,
+				0F0128311AFE75580079C245 /* ETMatchNetworkingManager.m in Sources */,
+				0F0128301AFE75580079C245 /* ETDateFormatter.m in Sources */,
 				0F0128151AFE741F0079C245 /* AFSecurityPolicy.m in Sources */,
 				0F0128121AFE741F0079C245 /* AFHTTPRequestOperationManager.m in Sources */,
 				0F01281A1AFE741F0079C245 /* AppDelegate.m in Sources */,
+				0F0128321AFE75580079C245 /* ETNetworkingManager.m in Sources */,
 				0F0128141AFE741F0079C245 /* AFNetworkReachabilityManager.m in Sources */,
 				0F0128161AFE741F0079C245 /* AFURLConnectionOperation.m in Sources */,
+				0F0128331AFE75580079C245 /* ETMatch.m in Sources */,
 				0F0128171AFE741F0079C245 /* AFURLRequestSerialization.m in Sources */,
 				0F0128181AFE741F0079C245 /* AFURLResponseSerialization.m in Sources */,
 				0F01281B1AFE741F0079C245 /* main.m in Sources */,
 				0F0128111AFE741F0079C245 /* AFHTTPRequestOperation.m in Sources */,
+				0F01282F1AFE75580079C245 /* NSDictionary+ETAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
