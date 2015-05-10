@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Emel Topaloglu. All rights reserved.
 //
 
-
 #import "ETNetworkingManager_ETProtected.h"
 #import "ETMatchNetworkingManager.h"
 #import "ETNetworkingCommons.h"
@@ -39,10 +38,10 @@ static NSString * const kETDefaultItemCountPerPage = @"20";
                                            kETOffsetKey:[NSString stringWithFormat:@"%ld",(long)startIndex]};
     
     NSMutableURLRequest *urlRequest = [self.requestSerializer requestWithMethod:kETHTTPMethodGET
-                                                                      URLString:@"http://worldcup.kimonolabs.com/api/matches?apikey=gwRhLH3yWqg6GDAUWBmFLtfk895hEJgz"
+                                                                      URLString:[[NSURL URLWithString:kETMatchString relativeToURL:self.baseURL] absoluteString]
                                                                      parameters:additionalParameters
                                                                           error:nil];
-
+    
     [self addRequest:urlRequest completion:^(NSError *error, id data)
      {
          if (completion)

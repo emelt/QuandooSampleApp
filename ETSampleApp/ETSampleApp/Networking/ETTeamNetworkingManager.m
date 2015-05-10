@@ -30,7 +30,7 @@ static NSString * const kETTeamString = @"teams";
 
 - (void)getTeamDetailsForTeamWithId:(NSString *)matchId completion:(ETTeamDetailRequestCompletion)completion
 {
-    NSString *relativeURL = [NSString stringWithFormat:@"%@/%@?%@=%@", kETTeamString, matchId, kETApiKey, kETApiKeyValue];
+    NSString *relativeURL = [NSString stringWithFormat:@"%@/%@", kETTeamString, matchId];
     NSMutableURLRequest *urlRequest = [self.requestSerializer requestWithMethod:kETHTTPMethodGET
                                                                       URLString:[[NSURL URLWithString:relativeURL relativeToURL:self.baseURL] absoluteString]
                                                                      parameters:nil
