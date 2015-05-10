@@ -161,15 +161,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		0F01280C1AFE741F0079C245 /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				0F01280D1AFE741F0079C245 /* LaunchScreen.xib */,
-				0F01280F1AFE741F0079C245 /* Main.storyboard */,
-			);
-			path = Base.lproj;
-			sourceTree = "<group>";
-		};
 		0F0128201AFE75580079C245 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,16 +248,17 @@
 		0F1F92AD1AFE3E2D00C44B49 /* ETSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				0F0128341AFE76890079C245 /* Cells */,
-				0F0128381AFE76890079C245 /* Images.xcassets */,
-				0F0128391AFE76890079C245 /* View Controllers */,
-				0F0128201AFE75580079C245 /* Extensions */,
-				0F0128241AFE75580079C245 /* Helpers */,
-				0F0128271AFE75580079C245 /* Networking */,
-				0F01281E1AFE745C0079C245 /* Info.plist */,
 				0F0127F31AFE741F0079C245 /* 3rd Party */,
 				0F0128081AFE741F0079C245 /* Base */,
-				0F01280C1AFE741F0079C245 /* Base.lproj */,
+				0F0128341AFE76890079C245 /* Cells */,
+				0F0128201AFE75580079C245 /* Extensions */,
+				0F0128241AFE75580079C245 /* Helpers */,
+				0F0128381AFE76890079C245 /* Images.xcassets */,
+				0F01281E1AFE745C0079C245 /* Info.plist */,
+				0F01280D1AFE741F0079C245 /* LaunchScreen.xib */,
+				0F01280F1AFE741F0079C245 /* Main.storyboard */,
+				0F0128271AFE75580079C245 /* Networking */,
+				0F0128391AFE76890079C245 /* View Controllers */,
 			);
 			path = ETSampleApp;
 			sourceTree = "<group>";
@@ -436,6 +428,7 @@
 				0F01280E1AFE741F0079C245 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		0F01280F1AFE741F0079C245 /* Main.storyboard */ = {
@@ -444,6 +437,7 @@
 				0F0128101AFE741F0079C245 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
