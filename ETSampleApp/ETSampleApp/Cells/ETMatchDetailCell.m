@@ -10,6 +10,8 @@
 #import "ETDateFormatter.h"
 #import "ETMatch.h"
 
+static const CGFloat kETEstimatedRowHeight = 150.0f;
+
 @interface ETMatchDetailCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -46,6 +48,11 @@
     {
         self.groupLabel.text = NSLocalizedString(@"Group: N/A", nil);
     }
+}
+
++ (CGFloat)estimatedRowHeight
+{
+    return kETEstimatedRowHeight;
 }
 
 @end

@@ -14,4 +14,6 @@
 
 - (void)updateWithMatch:(ETMatch *)match;
 
++ (CGFloat)estimatedRowHeight;
+
 @end

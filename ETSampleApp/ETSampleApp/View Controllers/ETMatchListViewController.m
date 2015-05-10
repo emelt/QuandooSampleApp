@@ -31,8 +31,10 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ETMatchDetailCell class]) bundle:[NSBundle mainBundle]]
          forCellReuseIdentifier:kETMatchCellIdentifier];
-    
-//    self.tableView.tableFooterView = [UIView new];
+
+    self.tableView.estimatedRowHeight = [ETMatchDetailCell estimatedRowHeight];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.tableFooterView = [UIView new];
     
     [self getMatchesStartingFromIndex:0];
 }
@@ -56,14 +58,6 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
     [self performSegueWithIdentifier:kETShowMatchDetailsSegueIdentifier sender:self];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [self tableView:self.tableView cellForRowAtIndexPath:indexPath];
-    [cell layoutIfNeeded];
-    CGFloat cellHeight = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    return cellHeight;
-}
-
 #pragma mark - UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -74,6 +68,8 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
     {
         ETMatch *match = self.matches[indexPath.row];
         [cell updateWithMatch:match];
+        [cell setNeedsUpdateConstraints];
+        [cell updateConstraintsIfNeeded];
     }
     
     return cell;
@@ -81,15 +77,14 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    if (self.matches.count > 0)
-//    {
-//        return self.matches.count + 1;
-//    }
-//    else
-//    {
-//        return 0;
-//    }
-    return self.matches.count;
+    if (self.matches.count > 0)
+    {
+        return self.matches.count + 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath

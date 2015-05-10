@@ -31,6 +31,7 @@
 		0F0128451AFE95900079C245 /* ETTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128441AFE95900079C245 /* ETTeam.m */; };
 		0F0128481AFE979E0079C245 /* ETTeamNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */; };
 		0F1F92CB1AFE3E2E00C44B49 /* ETSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */; };
+		0FF9C3981AFFA453003E94C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F01280F1AFE741F0079C245 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -362,6 +363,7 @@
 			files = (
 				0F0128401AFE76890079C245 /* Images.xcassets in Resources */,
 				0F01283F1AFE76890079C245 /* ETMatchDetailCell.xib in Resources */,
+				0FF9C3981AFFA453003E94C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

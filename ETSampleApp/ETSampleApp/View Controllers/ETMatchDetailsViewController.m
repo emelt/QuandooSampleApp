@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *venueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *groupLabel;
+@property (weak, nonatomic) IBOutlet UILabel *penaltiesLabel;
 
 @property (strong, nonatomic) ETTeam *homeTeam;
 @property (strong, nonatomic) ETTeam *awayTeam;
@@ -41,17 +42,19 @@
     [self getTeamDetailsForTeamWithId:self.match.homeTeamId];
     [self getTeamDetailsForTeamWithId:self.match.awayTeamId];
     
-    NSMutableString *score = [NSMutableString stringWithString:[NSString stringWithFormat:@"%ld:%ld", (long)self.match.homeTeamScore, (long)self.match.awayTeamScore]];
+    self.scoreLabel.text = [NSMutableString stringWithString:[NSString stringWithFormat:@"%ld:%ld", (long)self.match.homeTeamScore, (long)self.match.awayTeamScore]];
+    self.venueLabel.text = self.match.venue;
+    self.groupLabel.text = self.match.group ? [NSString stringWithFormat:NSLocalizedString(@"Group: %@", nil), self.match.group] : nil;
+    self.startDateLabel.text = [[ETDateFormatter sharedFormatter] stringWithDateFormat:@"dd-MM-YYYY hh:mm" fromDate:self.match.startDate];
     
     if (self.match.awayTeamPenalties || self.match.homeTeamPenalties)
     {
-        [score appendFormat:@"%ld:%ld", (long)self.match.homeTeamPenalties, (long)self.match.awayTeamPenalties];
+        self.penaltiesLabel.text = [NSString stringWithFormat:@"(%ld:%ld)", (long)self.match.homeTeamPenalties, (long)self.match.awayTeamPenalties];
     }
-    
-    self.scoreLabel.text = score;
-    self.venueLabel.text = self.match.venue;
-    self.groupLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Group: %@", nil), self.match.group];
-    self.startDateLabel.text = [[ETDateFormatter sharedFormatter] stringWithDateFormat:@"dd-MM-YYYY hh:mm" fromDate:self.match.startDate];
+    else
+    {
+        self.penaltiesLabel.text = @"";
+    }
 }
 
 - (void)getTeamDetailsForTeamWithId:(NSString *)teamId

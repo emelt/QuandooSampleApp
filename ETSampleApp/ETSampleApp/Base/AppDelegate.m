@@ -16,7 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self applyAppearanceProxies];
+    
     return YES;
 }
 
@@ -40,6 +42,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -
+
+- (void)applyAppearanceProxies
+{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:1.0f green:0.368f blue:0.0f alpha:0.6f]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:16],
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor]}];
 }
 
 @end
