@@ -32,6 +32,8 @@
 		0F0128481AFE979E0079C245 /* ETTeamNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0128471AFE979E0079C245 /* ETTeamNetworkingManager.m */; };
 		0F1F92CB1AFE3E2E00C44B49 /* ETSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */; };
 		0FF9C3981AFFA453003E94C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F01280F1AFE741F0079C245 /* Main.storyboard */; };
+		0FF9C3A31AFFB1AB003E94C4 /* ETLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9C3A21AFFB1AB003E94C4 /* ETLoadingCell.m */; };
+		0FF9C3A51AFFB1BB003E94C4 /* ETLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9C3A41AFFB1BB003E94C4 /* ETLoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,9 @@
 		0F1F92C91AFE3E2E00C44B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F1F92CA1AFE3E2E00C44B49 /* ETSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSampleAppTests.m; sourceTree = "<group>"; };
 		0F95D05A1AFF9D6B0078B55A /* ETNetworkingCommons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNetworkingCommons.h; sourceTree = "<group>"; };
+		0FF9C3A11AFFB1AB003E94C4 /* ETLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLoadingCell.h; sourceTree = "<group>"; };
+		0FF9C3A21AFFB1AB003E94C4 /* ETLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLoadingCell.m; sourceTree = "<group>"; };
+		0FF9C3A41AFFB1BB003E94C4 /* ETLoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETLoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +218,9 @@
 				0F0128351AFE76890079C245 /* ETMatchDetailCell.h */,
 				0F0128361AFE76890079C245 /* ETMatchDetailCell.m */,
 				0F0128371AFE76890079C245 /* ETMatchDetailCell.xib */,
+				0FF9C3A11AFFB1AB003E94C4 /* ETLoadingCell.h */,
+				0FF9C3A21AFFB1AB003E94C4 /* ETLoadingCell.m */,
+				0FF9C3A41AFFB1BB003E94C4 /* ETLoadingCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F0128401AFE76890079C245 /* Images.xcassets in Resources */,
+				0FF9C3A51AFFB1BB003E94C4 /* ETLoadingCell.xib in Resources */,
 				0F01283F1AFE76890079C245 /* ETMatchDetailCell.xib in Resources */,
 				0FF9C3981AFFA453003E94C4 /* Main.storyboard in Resources */,
 			);
@@ -402,6 +411,7 @@
 				0F01281B1AFE741F0079C245 /* main.m in Sources */,
 				0F0128111AFE741F0079C245 /* AFHTTPRequestOperation.m in Sources */,
 				0F01282F1AFE75580079C245 /* NSDictionary+ETAdditions.m in Sources */,
+				0FF9C3A31AFFB1AB003E94C4 /* ETLoadingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

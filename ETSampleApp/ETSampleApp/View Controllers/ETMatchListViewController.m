@@ -10,6 +10,7 @@
 #import "ETMatchListViewController.h"
 #import "ETMatchNetworkingManager.h"
 #import "ETMatchDetailCell.h"
+#import "ETLoadingCell.h"
 #import "ETMatch.h"
 
 static NSString * const kETShowMatchDetailsSegueIdentifier = @"showMatchDetails";
@@ -18,6 +19,7 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
 @interface ETMatchListViewController ()
 
 @property (nonatomic, strong) NSMutableArray *matches;
+@property (nonatomic, strong) ETLoadingCell *loadingCell;
 
 @end
 
@@ -35,8 +37,6 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
     self.tableView.estimatedRowHeight = [ETMatchDetailCell estimatedRowHeight];
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.tableFooterView = [UIView new];
-    
-    [self getMatchesStartingFromIndex:0];
 }
 
 #pragma mark - Setters & Getters
@@ -48,6 +48,17 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
         _matches = [NSMutableArray array];
     }
     return _matches;
+}
+
+- (ETLoadingCell *)loadingCell
+{
+    if (!_loadingCell)
+    {
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([ETLoadingCell class]) owner:self options:nil];
+        _loadingCell = [topLevelObjects objectAtIndex:0];
+    }
+    
+    return _loadingCell;
 }
 
 
@@ -62,34 +73,34 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ETMatchDetailCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kETMatchCellIdentifier];
-    
-    if (self.matches.count > indexPath.row && cell)
+    if (indexPath.row == self.matches.count)
     {
-        ETMatch *match = self.matches[indexPath.row];
-        [cell updateWithMatch:match];
-        [cell setNeedsUpdateConstraints];
-        [cell updateConstraintsIfNeeded];
+        return self.loadingCell;
     }
-    
-    return cell;
+    else
+    {
+        ETMatchDetailCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kETMatchCellIdentifier];
+        
+        if (self.matches.count > indexPath.row && cell)
+        {
+            ETMatch *match = self.matches[indexPath.row];
+            [cell updateWithMatch:match];
+            [cell setNeedsUpdateConstraints];
+            [cell updateConstraintsIfNeeded];
+        }
+        
+        return cell;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (self.matches.count > 0)
-    {
-        return self.matches.count + 1;
-    }
-    else
-    {
-        return 0;
-    }
+    return self.matches.count + 1;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == self.matches.count)
+    if (indexPath.row == self.matches.count && self.loadingCell.loading)
     {
         [self getMatchesStartingFromIndex:self.matches.count];
     }
@@ -127,10 +138,16 @@ static NSString * const kETMatchCellIdentifier = @"matchCell";
          }
          else
          {
+             if (matches.count == 0)
+             {
+                 self.loadingCell.loading = NO;
+                 return;
+             }
+             
              [weakSelf.matches addObjectsFromArray:matches];
              NSArray *newIndexes = [weakSelf indexPathArrayStartingFromIndex:[NSIndexPath indexPathForRow:startIndex inSection:0]
                                                          numberOfIndexes:matches.count];
-             [weakSelf.tableView insertRowsAtIndexPaths:newIndexes withRowAnimation:UITableViewRowAnimationNone];
+             [weakSelf.tableView insertRowsAtIndexPaths:newIndexes withRowAnimation:UITableViewRowAnimationAutomatic];
          }
      }];
 }
